@@ -1,0 +1,32 @@
+{% load static %}
+<!doctype html>
+<html lang="ko">
+<head>
+    <title>Hello, DevWorld!</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+    <!-- JQuery JS -->
+    <script src="{% static 'jquery-3.5.1.min.js' %}"></script>
+    <!-- Bootstrap JS -->
+    <script src="{% static 'bootstrap.min.js' %}"></script>
+    <!-- community CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+    </head>
+<body>
+
+{% include "navbar.html" %}
+
+<div class="container my-3" id="mainBase" style="padding: 0px 10px 10px 10px;">
+<!-- 기본 템플릿 안에 삽입될 내용 Start -->
+{% block content %}
+{% endblock %}
+</div>
+<!-- 기본 템플릿 안에 삽입될 내용 End -->
+{% block script %}
+{% endblock %}
+</body>

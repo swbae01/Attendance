@@ -1,0 +1,32 @@
+
+{% extends 'base.html' %}
+{% block content %}
+{% endblock %}
+
+{% block script %}
+{% load static %}
+<script>
+    var apath = "{% static 'myapp/lecture_list.html' %}";
+</script>
+<script src="{% static 'myapp/index.js' %}"></script>
+<!-- <script>
+
+var lopath = "{% url 'myapp:lecture_load' %}";
+
+function LoadLecture() {
+
+    // Toggle button hide...
+    $("#navbarNav").collapse('hide');
+
+    $("#mainBase").load("{% url 'myapp:lecture_load' %}", function(responseTxt, statusTxt, xhr){
+        if(statusTxt === "error") {
+            alert("error");
+            return;
+        }
+        else {
+            alert("done:" + xhr.status + ":" + xhr.statusText);
+        }
+    }); 
+}
+</script> -->
+{% endblock %}

@@ -1,0 +1,54 @@
+<!-- <div id = "kkmain" class="row d-flex justify-content-end">
+    <div class="col-sm-5 mt-2" style="margin-bottom: 0px;">
+            <h4 style="font-weight: bold;">강의 등록</h4>
+    </div>
+    <div class="col-sm-3 form-group  mt-2" style="margin-bottom: 0px;">
+        <select class="form-control" id="sel1">
+            <option>강의 No.</option>
+            <option>강의 명</option>
+            <option>담당 교수</option>
+        </select>
+    </div>
+    <div class="col-sm-4 d-flex justify-content-end form-group mt-2" style="margin-bottom: 0px;">
+        <div class="flex-grow-1">
+            <input type="text" class="form-control" id="searchBtn">
+        </div>
+        <div class="pl-2">
+            <button type="button" class="btn btn-primary" style="width:60px;">검색</button>
+        </div>
+    </div>
+ </div>
+
+ <table id="lectureListTable" class="table table-hover mt-3">
+    <thead>
+    <tr class="text-center thead-dark">
+        <th>강의 No.</th>
+        <th style="width:50%">강의명</th>
+        <th>담당교수</th>
+    </tr>
+    </thead>
+    <tbody>
+        {% if lecture_list %}
+        {% for lecture in lecture_list %}
+        <tr  class="text-center">
+            <td>
+                {{ lecture.classNo }}
+            </td>
+            <td  class="text-left">
+                {{ lecture.className }}
+            </td>
+            <td>
+                {{ lecture.professor }}
+            </td>
+        </tr>
+        {% endfor %}
+        {% else %}
+        <tr>
+            <td colspan="3">등록된 강의가 없습니다.</td>
+        </tr>
+        {% endif %}
+    </tbody>
+</table> -->
+
+<!-- {% load static %}
+<script src="{% static 'myapp/lecture_list.js' %}"></script> -->
